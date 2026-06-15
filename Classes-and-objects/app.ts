@@ -65,10 +65,7 @@
 
 // // ahh so the issue is typescript will tell the dev that this is worng but it will still compile and run the code even if its worng typescript give the devs heads up but will still do its job if the devs ingore it
 
-
-
 // class inheritance with extend public and private
-
 
 // class humanMaker {
 //   constructor(private name: string) {}
@@ -81,7 +78,6 @@
 //   super(name)
 // }
 // }
-
 
 // protected
 
@@ -96,8 +92,6 @@
 //     this.name = "some other name";
 //   }
 // }
-
-
 
 // let b1 = new newPhoneMaker()
 // b1.name = 'potty'
@@ -115,58 +109,70 @@
 
 // let u1 = new user("Zain")
 
-
 // the readonly property will show en error when we later try to change the name but if we comple the code it will still run and still change the name for the propertry as typescrpt will tell the dev something is worng please fix it but will still do it
 
 // Optional properties
 
-class user {
-  constructor(public name: string, public age: number, public gender?: string) {}
+// class user {
+//   constructor(public name: string, public age: number, public gender?: string) {}
+// }
+
+// let u1 = new user("zain", 18, "male")
+
+// // its optional mean the user can just give or not give it wont matter
+
+// // parameter Properties
+
+// class user1 {
+//   constructor(
+//     public name: string,
+//     public age: number,
+//     public gender?: string,
+//   ) {}
+// }
+
+// let u11 = new user("zain", 18, "male");
+
+// // getter and setters
+
+// class user3 {
+//   constructor(
+//     public name: string,
+//     public age: number,
+//     public gender?: string,
+//   ) {}
+
+//   get Name() {
+//     return this.name;
+//   }
+
+//   set Name(value: string) {
+//     this.name = value
+//   }
+// }
+
+// let u12 = new user("zain", 18, "male");
+
+// // static members\
+
+// class zain {
+//   static version = 1.1
+
+//   static getRnadomNumber() {
+//     return Math.random()
+//   }
+// }
+
+// abstract classes and methods
+
+class payment {
+  constructor(protected amount: number, protected account: number) {}
+  ispaymentvaild(amount: number) {
+    return this.amount > 0;
+  }
 }
 
-let u1 = new user("zain", 18, "male")
 
-// its optional mean the user can just give or not give it wont matter
-
-// parameter Properties
-
-class user1 {
-  constructor(
-    public name: string,
-    public age: number,
-    public gender?: string,
-  ) {}
-}
-
-let u11 = new user("zain", 18, "male");
-
-
-// getter and setters
-
-class user3 {
-  constructor(
-    public name: string,
-    public age: number,
-    public gender?: string,
-  ) {}
-
-  get Name() {
-    return this.name;
-  }
-
-  set Name(value: string) {
-    this.name = value
-  }
-}
-
-let u12 = new user("zain", 18, "male");
-
-// static members\
-
-class zain {
-  static version = 1.1
-
-  static getRnadomNumber() {
-    return Math.random()
-  }
+interface zain {
+  
 }
