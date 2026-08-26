@@ -1,5 +1,6 @@
 "use strict";
 // 1. Type Annotations
+Object.defineProperty(exports, "__esModule", { value: true });
 // Write a function greet(name: string, age: number): string that returns a greeting message.
 // function hello(name: string, age:number) :string {
 //   return `hello my name is ${name} and i am today ${age} years old happy to meet you`
@@ -59,3 +60,4 @@ function mover(x, y, direction) {
     console.log(x, y);
 }
 mover(1, 0, Direction.Up);
+//# sourceMappingURL=p1.js.map
